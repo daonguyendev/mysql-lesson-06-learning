@@ -1,0 +1,37 @@
+student:
+- id (pk)
+- fullname
+- dob
+- gender
+- pob
+- mobile
+- email
+- clazz_id (fk)
+
+clazz:
+- id (pk)
+- name
+- dep_id (fk)
+
+department:
+- id (pk)
+- name
+
+lecture:
+- id (pk)
+- fullname
+- major
+- dep_id (fk)
+
+subject:
+- id (pk)
+- name
+- hours
+- lecture_id (fk)
+
+score:
+- id (pk)
+- student_id (pk)
+- subject_id (pk)
+- exam_times
+- exam_score
